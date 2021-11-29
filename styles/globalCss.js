@@ -1,7 +1,7 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
-
-const globalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
+ 
 *,
 *::before,
 *::after {
@@ -127,12 +127,10 @@ a:hover {
   text-decoration: underline;
 }
 a:not([href]):not([tabindex]) {
-  color: inherit;
   text-decoration: none;
 }
 a:not([href]):not([tabindex]):hover,
 a:not([href]):not([tabindex]):focus {
-  color: inherit;
   text-decoration: none;
 }
 a:not([href]):not([tabindex]):focus {
@@ -348,9 +346,11 @@ table th {
   text-align: left;
 }
 
-body {
-  background-color: #fafafa;
+
+ 
+body{
+ background-color: #fafafa;
 }
 `
 
-export default globalStyles
+export default GlobalStyles
