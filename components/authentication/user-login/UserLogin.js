@@ -28,12 +28,12 @@ function UserLogin ({...props}){
 
     return (
         <>
-        <Login {...props} onSubmit={(e)=>handleSubmit(e)}>    
-            <TextInput label="Email" onChange={(e)=> setEmail(e.currentTarget.value)} id="emailAddress" placeholder="janedoe@home.com" {...props}/>
-            <TextInput label="Password" onChange={(e)=> setPassword(e.currentTarget.value)} type="password" id="emailAddress" placeholder="use a secure password" {...props}/>
-    
-            <Button bgcolor="#ed4747" color="white" noBoxShadow {...props} type="submit">LOGIN</Button>
-        </Login>
+            <Login {...props} onSubmit={(e)=>handleSubmit(e)}>    
+                <TextInput label="Email" onChange={(e)=> setEmail(e.currentTarget.value)} id="emailAddress" placeholder="janedoe@home.com" {...props}/>
+                <TextInput label="Password" onChange={(e)=> setPassword(e.currentTarget.value)} type="password" id="emailAddress" placeholder="use a secure password" {...props}/>
+        
+                <Button bgcolor="#ed4747" color="white" noBoxShadow {...props} type="submit">LOGIN</Button>
+            </Login>
         </>
 
     )

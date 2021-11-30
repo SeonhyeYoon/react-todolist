@@ -3,7 +3,7 @@ import router from "next/router";
 import { useAuth } from "libs/hooks/useAuth";
 import { AppBar } from "components/appbar";
 import {Title} from "ui/title"
-import {PageLayout, PageHeader, PageFooter, PageBody} from 'layouts/loginpage'
+import {PageLayout, PageHeader} from 'layouts/loginpage'
 import { Button } from "ui/buttons";
 
 function ToDoPage(props) {
@@ -30,12 +30,6 @@ function ToDoPage(props) {
           <PageHeader>
             <Title>TO DO LIST</Title>
           </PageHeader>
-          <PageBody>
-
-          </PageBody>
-          <PageFooter>
-            
-          </PageFooter>
         </PageLayout>
       </>
     )
