@@ -2,7 +2,7 @@ import router from "next/router";
 
 import { useAuth } from "libs/hooks/useAuth";
 import { AppBar } from "components/appbar";
-import {Title} from "ui/title"
+import { Title } from "ui/title";
 import {PageLayout, PageHeader} from 'layouts/loginpage'
 import { Button } from "ui/buttons";
 
@@ -18,7 +18,7 @@ function ToDoPage(props) {
       return (
         <>
           <AppBar />
-          <Title>You're not a member</Title>
+          <Title>You are not a member</Title>
           <Button onClick={homeButtonHandler}>Home</Button>
         </>
       )

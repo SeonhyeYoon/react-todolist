@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Logo } from "components/icons/logo"
 import {BrandStyles} from "./styles"
+import styled from "styled-components"
 
 
 function Brand ({...props}){
