@@ -6,16 +6,21 @@ function useAuth() {
   const [user, setUser] = useState(null)
 
   useEffect(() => {
-    onAuthStateChanged(auth, (clientCredential) => {
-      if (clientCredential) {
+    // Component mounts
+    const authChange = onAuthStateChanged(auth, (clientCredential)=>{
+      if(clientCredential){
         setUser(clientCredential)
       } else {
         setUser(null)
       }
-    })
-  })
+    });
 
-  return user
+    // Component unmount
+    return ()=> authChange()
+  }, [])
+
+  return user;
 }
 
 export { useAuth }
+

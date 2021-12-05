@@ -22,17 +22,18 @@ function ToDoPage(props) {
           <Button onClick={homeButtonHandler}>Home</Button>
         </>
       )
+    } else {
+      return (
+        <>
+          <AppBar />
+          <PageLayout>
+            <PageHeader>
+              <Title>TO DO LIST</Title>
+            </PageHeader>
+          </PageLayout>
+        </>
+      )
     }
-    return (
-      <>
-        <AppBar />
-        <PageLayout>
-          <PageHeader>
-            <Title>TO DO LIST</Title>
-          </PageHeader>
-        </PageLayout>
-      </>
-    )
   
 }
 
