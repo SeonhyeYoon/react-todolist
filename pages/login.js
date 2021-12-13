@@ -17,7 +17,7 @@ function index (){
                 </PageHeader>
                 <PageBody>
                     <GoogleProvider style={{marginBottom:"1.5rem"}}>With Google</GoogleProvider>
-                    <GitHubProvider bgcolor="crimson">With Github</GitHubProvider>
+                    <GitHubProvider>With Github</GitHubProvider>
                     <Spacer className="spacing" >OR</Spacer>
                     <UserLogin/>
                 </PageBody>             
