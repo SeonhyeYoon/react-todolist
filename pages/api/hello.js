@@ -2,7 +2,6 @@
 // server environment NODE.js
 // common js Deno......
 const fs = require('fs');
-const express = require('express');
 
 
 export default function handler(req, res) {
